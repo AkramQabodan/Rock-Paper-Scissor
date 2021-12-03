@@ -1,0 +1,34 @@
+.ScoreBoxContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55rem;
+  height: 12rem;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 4px solid hsl(217, 16%, 45%);
+  padding: 2rem;
+}
+.logoContainer {
+  height: 8rem;
+  width: 12rem;
+  /* background-color: red; */
+}
+.logo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* object-fit: contain; */
+}
+@media only Screen and (max-width: 450px) {
+  .ScoreBoxContainer {
+    border-radius: 10px;
+    width: 90%;
+    height: 7.5rem;
+    border: 3px solid hsl(217, 16%, 45%);
+  }
+  .logoContainer {
+    height: 4rem;
+    width: 6rem;
+  }
+}

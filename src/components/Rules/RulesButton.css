@@ -1,0 +1,18 @@
+.Rules-Button {
+  position: absolute;
+  width: 9rem;
+  height: 3rem;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 1.4rem;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media only Screen and (max-width: 450px) {
+  .Rules-Button {
+    right: auto;
+  }
+}

@@ -1,0 +1,51 @@
+.Dark-Background {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.377);
+  position: absolute;
+}
+.Rules-Container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 31rem;
+  height: 31.8rem;
+  border-radius: 13px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Exist-Button {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+.Rules-Img {
+  transform: scale(80%);
+}
+
+@media only Screen and (max-width: 450px) {
+  .Rules-Container {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .Header {
+    margin-bottom: 20%;
+  }
+  .Rules-Img {
+    transform: scale(100%);
+  }
+}

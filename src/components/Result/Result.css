@@ -1,0 +1,122 @@
+.Results {
+  display: flex;
+  align-items: center;
+  /* width: 40%; */
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+.You-Picked-Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+}
+.You-Picked-Span {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  padding-bottom: 3rem;
+}
+.The-House-Picked-Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Computer-Picked-Span {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  padding-bottom: 3rem;
+}
+.Start-Lose-Win-Draw {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  /* background-color: antiquewhite; */
+  font-size: 3.5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  color: rgb(255, 255, 255);
+}
+.End-Lose-Win-Draw {
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  /* background-color: antiquewhite; */
+  font-size: 3.5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  color: rgb(255, 255, 255);
+  transition: all 1s ease-in-out;
+  justify-content: center;
+  align-items: center;
+}
+.Title-Win-Draw-Lose {
+  margin-bottom: 1rem;
+}
+
+.Play-Again-WIN {
+  border-radius: 5px;
+  height: 3rem;
+  font-size: 1.3rem;
+  border: none;
+  color: hsl(214, 47%, 23%);
+  cursor: pointer;
+}
+.Play-Again-DRAW {
+  border-radius: 5px;
+  height: 3rem;
+  font-size: 1.3rem;
+  border: none;
+  color: hsl(214, 47%, 23%);
+  cursor: pointer;
+}
+.Play-Again-LOSE {
+  border-radius: 5px;
+  height: 3rem;
+  font-size: 1.3rem;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+@media only screen and (max-width: 450px) {
+  .You-Picked-Container {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 153px;
+  }
+  .You-Picked-Span {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .The-House-Picked-Container {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    /* align-items: flex-end; */
+  }
+  .Computer-Picked-Span {
+    font-size: 1rem;
+    padding: 1rem;
+    /* padding-right: 0; */
+  }
+  .Start-Lose-Win-Draw {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin: 0%;
+    padding: 0;
+    transform: translate(-50%, 0);
+  }
+  .End-Lose-Win-Draw {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin: 0%;
+    padding: 0;
+    transform: translate(-50%, 0);
+  }
+  .Title-Win-Draw-Lose {
+    font-size: 2.5rem;
+  }
+}
